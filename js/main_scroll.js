@@ -194,16 +194,11 @@ function popWork(target, url) {
       $("#wrap").css("height", h);
       $("body, html").animate({ scrollTop: 0 }, 300);
       $(".pop_bg").fadeIn(300).focus();
-      //wpHeight.init();
-      //initW();
-
-      //alert($(this));
 
       console.log($(this));
       console.log($(target));
 
       $(".layerClose").click(function () {
-        //h3 = $("#mainWorks").position();
         $(".pop_bg").fadeOut(300).remove();
         $("#wrap").removeClass("works");
         $("#wrap").css("height", "auto");
