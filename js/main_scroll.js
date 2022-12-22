@@ -7,6 +7,7 @@ const navLi = document.querySelectorAll("#nav li");
 const home = document.querySelector(".home");
 const svgWrap = document.querySelector(".svgWrap");
 const articles = document.querySelectorAll("#wrapper article");
+const mouseDown = document.querySelector('.mouseDown')
 const s_wid = slider.offsetWidth;
 const s_li = slider.children;
 const indi_bar = document.getElementById("indi_bar");
@@ -72,6 +73,7 @@ cont_3.addEventListener("wheel", function (e) {
   if (pct == 100) {
     onArticle(this);
     offArticle(this);
+    mouseDown.style.display = 'none';
   }
 });
 cont_4.addEventListener("wheel", function (e) {
@@ -79,6 +81,7 @@ cont_4.addEventListener("wheel", function (e) {
   if (e.deltaY < 0) {
     offArticle(this);
     onPrevArticle(this);
+    mouseDown.style.display = 'flex';
     return;
   }
 });
@@ -137,6 +140,7 @@ window.addEventListener("keydown", (event) => {
     if (cont_3.offsetTop == 0 && pct == 100) {
       onArticle(cont_3);
       offArticle(cont_3);
+      mouseDown.style.display = 'none';
     }
     if (cont_3.offsetTop == 0 && s_pos <= 0) {
       move_slider(100);
@@ -164,6 +168,7 @@ window.addEventListener("keydown", (event) => {
     if (cont_4.offsetTop == 0) {
       onPrevArticle(cont_4);
       offArticle(cont_4);
+      mouseDown.style.display = 'flex';
     }
     menuActive();
 		homeActive();
