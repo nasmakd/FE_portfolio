@@ -181,6 +181,11 @@ for (let i = 0; i < navLi.length; i++) {
       offArticle(articles[j]);
       offArticle(articles[0]);
     }
+    if(e.target.classList.contains('contact')){
+      mouseDown.style.display = 'none';
+    }else{
+      mouseDown.style.display = 'flex';
+    }
     articles[i].classList.add("on");
     menuActive();
 		homeActive();
@@ -192,7 +197,7 @@ function popWork(target, url) {
   $("#wrap").addClass("works");
 	
   $.ajax({
-    url: "/popup/" + url + ".jsp",
+    url: "/popup/" + url + ".html",
     success: function (result) {
       $(".pop_bg").html(result);
       var h = $(".pop_bg").height();
