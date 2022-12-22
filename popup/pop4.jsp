@@ -103,6 +103,5 @@
         </li>
       </ul>
     </div>
-    <!-- .inner -->
   </div>
 </article>
