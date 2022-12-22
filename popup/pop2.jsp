@@ -1,4 +1,4 @@
-<button type="button" class="layerClose"><span class="sr_only">닫기</span><img src="../img/close.svg" alt="닫기"></button>
+<button type="button" class="layerClose"><span class="sr_only">닫기</span><img src="./img/close.svg" alt="닫기"></button>
 <article class="pop-work project1">
   <div class="head">
     <strong>YES24 북클럽</strong>
