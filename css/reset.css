@@ -1,0 +1,22 @@
+*{
+  padding: 0;margin: 0;
+  box-sizing: border-box;
+}
+header,main,section,aside,article,footer,nav,menu,details,figure,figcaption {
+  display: block;
+}
+ul, ol{
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
