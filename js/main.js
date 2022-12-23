@@ -196,7 +196,7 @@ function popWork(target, url) {
 	$('#wrap').addClass('works');
 
 	$.ajax({
-    url: `./popup/${url}.jsp`,
+		url: `./popup/${url}.html`,
 		success: function (result) {
 			$('.pop_bg').html(result);
 			var h = $('.pop_bg').height();
