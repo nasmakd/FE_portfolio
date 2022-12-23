@@ -225,3 +225,7 @@ function popWork(target, url) {
 		},
 	});
 }
+
+$(".headerBtn").click(function(){
+	$("header").toggleClass("show")
+})
