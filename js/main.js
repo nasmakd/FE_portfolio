@@ -229,3 +229,7 @@ function popWork(target, url) {
 $(".headerBtn").click(function(){
 	$("header").toggleClass("show")
 })
+$(".thankyou_message .close").click(function(){
+	$(".thankyou_message").hide();
+	return false;
+});

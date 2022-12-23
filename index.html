@@ -12,6 +12,7 @@
 		<link href="./css/reset.css" rel="stylesheet" type="text/css" />
 		<script src="./js/main.js" defer></script>
 		<script src="./js/hover.js" defer></script>
+		<script src="./js/form-submission-handler.js" defer></script>
 	</head>
 	<body>
 		<div id="wrap">
@@ -30,7 +31,7 @@
 					<li class="contact">Contact</li>
 				</ul>
 				<div class="headerBtn">
-					<button><img src="img/arrowRight.svg" alt="메뉴보기"></button>
+					<button><img src="img/arrowRight.svg" alt="메뉴보기" /></button>
 				</div>
 			</header>
 			<section id="wrapper">
@@ -97,13 +98,13 @@
 					<div class="about">
 						<div class="about_me">
 							<h3 class="classicFont">About Me</h3>
-							<p class="notoSerif">
+							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 								Minima, autem a. Consequatur nulla veniam reiciendis quibusdam
 								aliquid ut odio, vero similique. Voluptatem iusto molestias sint
 								ad laudantium magnam animi recusandae.
 							</p>
-							<p class="notoSerif">
+							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 								Minima, autem a. Consequatur nulla veniam reiciendis quibusdam
 								aliquid ut odio, vero similique. Voluptatem iusto molestias sint
@@ -170,8 +171,75 @@
 					</div>
 				</article>
 				<article class="cont" id="cont_4">
-					<div class="cont_title">
-						<h2>Contact</h2>
+					<div class="contactWrap">
+						<div class="contactTitle">
+							<h2 class="classicFont">Contact</h2>
+							<a href="mailto:peakmj94@gmail.com">peakmj94@gmail.com</a>
+						</div>
+						<div class="mailForm">
+							<form
+								class="gform form-elements"
+								name="contactUs"
+								method="POST"
+								action="https://script.google.com/macros/s/AKfycbxuKC3ADHGpUIIXApqpgg1tKG00XndgEzT_6qEc/exec">
+								<fieldset>
+									<legend class="sr_only">구글 메일로 발송</legend>
+									<!-- 발송인 이름, 발송인 이메일, 메시지 -->
+									<div class="formlist">
+										<ul>
+											<li>
+												<label for="name" class="sr_only">Name</label>
+												<span class="inputbox">
+													<input
+														type="text"
+														id="name"
+														name="name"
+														placeholder="Name"
+														required />
+												</span>
+											</li>
+											<li>
+												<label for="email" class="sr_only">E-mail<sup>*</sup></label>
+												<span class="inputbox">
+													<input
+														type="email"
+														id="email"
+														name="email"
+														placeholder="sample@mail.com"
+														required />
+												</span>
+											</li>
+											<li>
+												<label for="message" class="sr_only">Message</label>
+												<span class="inputbox">
+													<textarea
+														name="message"
+														id="message"
+														cols="30"
+														rows="10"
+														placeholder="Message"></textarea>
+												</span>
+											</li>
+										</ul>
+										<div class="btn_box">
+											<button type="submit" class="command_btn">
+												Send
+											</button>
+										</div>
+									</div>
+
+									<div class="thankyou_message">
+										<section>
+											<h1>작성된 내용이 모두 전송되었습니다</h1>
+											<p>메일 확인 후 연락드리겠습니다.</p>
+											<div class="btn_box">
+												<a href="#" class="close">닫기</a>
+											</div>
+										</section>
+									</div>
+								</fieldset>
+							</form>
+						</div>
 					</div>
 					<div class="mailContact"></div>
 				</article>
