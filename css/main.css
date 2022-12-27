@@ -578,7 +578,13 @@ header ul li {
 }
 .pop_bg .layerClose{
 	position: absolute;
-	right: 10px;top: 10px;
+	left: 50%;top: 10px;
+	width: 46px;height: 46px;
+	transform: translateX(-50%);
+	border-radius: 8px;
 	cursor: pointer;
 	background-color: rgba(255, 255, 255, 0.2);
+}
+.pop_bg .layerClose img{
+	width: 30px;height: 30px;
 }
