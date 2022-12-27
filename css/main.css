@@ -297,10 +297,152 @@ header ul li {
 }
 
 #cont_3 {
-	/* top:0%; */
 	top: 100%;
 	background: #333;
 }
+
+#slider {
+	display: flex;
+	align-items: flex-start;
+	position: absolute;
+	height: 300px;
+	top: calc(50% - 150px);
+	left: 10vw;
+	transition: transform 0.3s;
+}
+#slider::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	left: 0;
+	top: calc(50% - 5px);
+	background-color: #79c2ed;
+	z-index: -1;
+	border-radius: 5px;
+}
+#slider li {
+	position: relative;
+	flex: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	cursor: pointer;
+	aspect-ratio: 1/1;
+	margin: 0 200px 0 0;
+	transition: transform 0.2s;
+}
+
+#slider li .workBg {
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: 100%;
+}
+
+.work_title {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	color: #fff;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity .5s;
+}
+#slider li:hover .work_title {
+	opacity: 1;
+}
+.work_title strong {
+	display: inline-block;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+#slider li > .workBg::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#cont_3 #slider li:nth-child(1) .workBg {
+	background-image: url('../img/tiretech.png');
+}
+#cont_3 #slider li:nth-child(2) .workBg {
+	background-image: url('../img/zepeto.png');
+}
+#cont_3 #slider li:nth-child(3) .workBg {
+	background-image: url('../img/osteria.png');
+}
+#cont_3 #slider li:nth-child(4) .workBg {
+	background-image: url('../img/bootstrap_site.png');
+}
+#cont_3 #slider li:nth-child(5) .workBg {
+	background-image: url('../img/yes24.png');
+}
+#cont_3 #slider li:nth-child(6) .workBg {
+	background-image: url('../img/chat.png');
+	background-position: center 48%;
+}
+#cont_3 #slider li:nth-child(7) .workBg {
+	background-image: url('../img/todo_react.png');
+	background-position: center 48%;
+}
+#cont_3 #slider li:nth-child(8) .workBg {
+	background-image: url('../img/netflix.png');
+}
+
+.colorDot {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	background: rgba(137, 212, 255, 0.6);
+	border-radius: 50%;
+	transform: scale(0.1);
+	transition: all 0.8s;
+	z-index: 100;
+}
+
+#indicator {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 8px;
+	background: #333;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+#indi_bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 105%;
+	width: 100%;
+	background: rgba(255, 196, 164, 0.6);
+	clip-path: polygon(0% 0%, 10px 0%, 10px 100%, 0% 100%);
+	transition: all 0.2s;
+}
+
 #cont_4 {
 	top: 100%;
 	background-color: #333;
@@ -419,89 +561,6 @@ header ul li {
 	border-radius: 4px;
 	font-size: 17px;
 	border: 1px solid #888;
-}
-
-#slider {
-	display: flex;
-	align-items: flex-start;
-	position: absolute;
-	height: 300px;
-	top: calc(50% - 150px);
-	left: 10vw;
-	/* background: #eee; */
-	transition: transform 0.3s;
-}
-#slider::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 10px;
-	left: 0;
-	top: calc(50% - 5px);
-	background-color: #79c2ed;
-	z-index: -1;
-	border-radius: 5px;
-}
-#slider li {
-	flex: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-	cursor: pointer;
-	aspect-ratio: 1/1;
-	margin: 0 200px 0 0;
-	transition: transform 0.2s;
-	background-image: url('https://images.unsplash.com/photo-1671595063544-5c086e4b050f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=344&q=80');
-	background-position: center center;
-	background-size: cover;
-}
-
-#slider li div {
-	position: relative;
-	z-index: 5;
-	width: 100%;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.2);
-}
-
-.colorDot {
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 10px;
-	height: 10px;
-	background: rgba(255, 196, 164, 0.6);
-	border-radius: 50%;
-	transform: scale(0.1);
-	transition: all 0.8s;
-	z-index: 100;
-}
-
-#indicator {
-	position: absolute;
-	left: 50%;
-	bottom: 5%;
-	transform: translateX(-50%);
-	width: 80%;
-	height: 8px;
-	background: #333;
-	border-radius: 4px;
-	overflow: hidden;
-}
-
-#indi_bar {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 105%;
-	width: 100%;
-	background: rgba(255, 196, 164, 0.6);
-	clip-path: polygon(0% 0%, 10px 0%, 10px 100%, 0% 100%);
-	transition: all 0.2s;
 }
 
 .pop_bg {
