@@ -22,7 +22,10 @@
 li {
 	list-style: none;
 }
-
+::selection{
+  background-color: rgba(137, 212, 255, 0.6);
+  color: #000;
+}
 .sr_only {
 	width: 1px;
 	height: 1px;
@@ -357,7 +360,7 @@ header ul li {
 	top: 0;
 	z-index: 100;
 	color: #fff;
-	text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	opacity: 0;
 	transition: opacity .5s;
 }
