@@ -204,14 +204,13 @@ function popWork(target, url) {
 			$('body, html').animate({ scrollTop: 0 }, 300);
 			$('.pop_bg').fadeIn(300).focus();
 
-			console.log($(this));
-			console.log($(target));
+			// console.log($(this));
+			// console.log($(target));
 
 			$('.layerClose').click(function () {
 				$('.pop_bg').fadeOut(300).remove();
 				$('#wrap').removeClass('works');
 				$('#wrap').css('height', 'auto');
-
 				$(target).focus();
 			});
 
@@ -226,10 +225,10 @@ function popWork(target, url) {
 	});
 }
 
-$(".headerBtn").click(function(){
-	$("header").toggleClass("show")
-})
-$(".thankyou_message .close").click(function(){
-	$(".thankyou_message").hide();
+$('.headerBtn').click(function () {
+	$('header').toggleClass('show');
+});
+$('.thankyou_message .close').click(function () {
+	$('.thankyou_message').hide();
 	return false;
 });

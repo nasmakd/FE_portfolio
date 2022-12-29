@@ -11,7 +11,6 @@ function on_colorDot(e){
     e = e || window.event;
     pos.x = e.offsetX;
     pos.y = e.offsetY;
-    console.log(this)
     colorDot = this.previousElementSibling;
     colorDot.style.transform = `
         translate(${pos.x}px, ${pos.y}px) scale(100)

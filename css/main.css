@@ -658,13 +658,16 @@ header ul li {
 	}
 }
 .pop-work .head strong{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	position: absolute;
-	bottom: 15%;left: 50%;
-	transform: translateX(-50%);
+	width: 100%;
+	bottom: 15%;
+	text-align: center;
 } 
 .pop-work .desc{
 	height: 50vh;
+	width: 50vw;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -672,7 +675,7 @@ header ul li {
 	text-align: center;
 }
 .pop-work .desc strong{
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 .pop-work .WorkLink{
 	margin-top: 10px;
@@ -707,7 +710,11 @@ header ul li {
 .pop-work .WorkLink a:hover::after{
 	width: 100%;
 }
-
+.pop-work .text{
+	word-break: keep-all;
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
 .work_skill_list{
 	width: 100%;
 	margin-top: 50px;
@@ -757,6 +764,9 @@ header ul li {
 }
 .work_skill_list.list8 li:nth-child(4){
 	background-image: url("../img/redux.png");
+}
+.work_skill_list.list8 li:nth-child(5){
+	background-image: url("../img/sass.png");
 }
 .work_skill_list.list9 li:nth-child(3){
 	background-image: url("../img/Vue.png");
