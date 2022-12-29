@@ -464,6 +464,17 @@ header ul li {
 .contactWrap > div {
 	width: 50%;
 }
+@media (max-width: 768px){
+	#cont_4 .contactWrap{
+		flex-direction: column;
+	}
+	.contactWrap > div{
+		width: 100%;
+	}
+	.contactTitle{
+		margin-right: 0;
+	}
+}
 .contactTitle {
 	padding: 20px;
 	margin-right: 5vw;
