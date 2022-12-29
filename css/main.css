@@ -298,7 +298,11 @@ header ul li {
 	width: 100%;
 	max-width: 60px;
 }
-
+@media (max-width: 700px){
+	#cont_2 .about{
+		width: 90%;
+	}
+}
 #cont_3 {
 	top: 100%;
 	background: #333;

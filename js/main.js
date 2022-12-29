@@ -201,24 +201,15 @@ function popWork(target, url) {
 			$('.pop_bg').html(result);
 			var h = $('.pop_bg').height();
 			$('#wrap').css('height', h);
-			$('body, html').animate({ scrollTop: 0 }, 300);
-			$('.pop_bg').fadeIn(300).focus();
+			$('.pop_bg').focus();
 
 			// console.log($(this));
 			// console.log($(target));
 
 			$('.layerClose').click(function () {
-				$('.pop_bg').fadeOut(300).remove();
+				$('.pop_bg').remove();
 				$('#wrap').removeClass('works');
 				$('#wrap').css('height', 'auto');
-				$(target).focus();
-			});
-
-			$('.pop-work').blur(function () {
-				$('.pop_bg').fadeOut(300).remove();
-				$('#wrap').removeClass('works');
-				$('#wrap').css('height', 'auto');
-
 				$(target).focus();
 			});
 		},
