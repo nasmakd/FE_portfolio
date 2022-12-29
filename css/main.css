@@ -784,6 +784,9 @@ header ul li {
 .work_skill_list.list8 li:nth-child(5){
 	background-image: url("../img/sass.png");
 }
+.work_skill_list.list8 li:nth-child(6){
+	background-image: url("../img/bootstrap.png");
+}
 .work_skill_list.list9 li:nth-child(3){
 	background-image: url("../img/Vue.png");
 }
