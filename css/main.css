@@ -408,6 +408,9 @@ header ul li {
 #cont_3 #slider li:nth-child(8) .workBg {
 	background-image: url('../img/netflix.png');
 }
+#cont_3 #slider li:nth-child(9) .workBg {
+	background-image: url('../img/VueTodo.png');
+}
 
 .colorDot {
 	display: block;
@@ -571,7 +574,7 @@ header ul li {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	padding: 50px;
+	padding: 60px 50px 50px;
 	z-index: 1000;
 	background-color: #333;
 	color: #fff;
@@ -579,7 +582,7 @@ header ul li {
 .pop_bg .layerClose{
 	position: absolute;
 	left: 50%;top: 10px;
-	width: 46px;height: 46px;
+	width: 40px;height: 40px;
 	transform: translateX(-50%);
 	border-radius: 8px;
 	cursor: pointer;
@@ -588,3 +591,77 @@ header ul li {
 .pop_bg .layerClose img{
 	width: 30px;height: 30px;
 }
+.pop-work{
+
+}
+.pop-work .head{
+	height: 40vh;
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: bgAni 20s linear infinite;
+	position: relative;
+	border-radius: 20px;
+} 
+.project1 .head{
+	background-image: url('../img/tiretech.png');
+	animation-duration: 16s;
+}
+.project2 .head{
+	background-image: url('../img/zepeto.png');
+	animation-duration: 24s;
+}
+.project3 .head{
+	background-image: url('../img/osteria.png');
+}
+.project4 .head{
+	background-image: url('../img/bootstrap_site.png');
+}
+.project5 .head{
+	background-image: url('../img/yes24.png');
+	animation-duration: 25s;
+	background-size: auto;
+}
+.project6 .head{
+	background-image: url('../img/chat.png');
+	animation-duration: 6s;
+	background-size: auto;
+}
+.project7 .head{
+	background-image: url('../img/todo_react.png');
+	animation-duration: 4s;
+	background-size: auto;
+}
+.project8 .head{
+	background-image: url('../img/netflix.png');
+	animation-duration: 13s;
+}
+.project9 .head{
+	background-image: url('../img/VueTodo.png');
+	animation-duration: 8s;
+	background-size: auto;
+}
+
+.pop-work .head::before{
+	content: "";
+	position: absolute;
+	width: 100%;height: 100%;
+	background-image: linear-gradient(rgba(51, 51, 51,.5), #333);
+}
+@keyframes bgAni {
+	0%{
+		background-position: 50% 0;
+	}
+	50%{
+		background-position: 50% 100%;
+	}
+	100%{
+		background-position: 50% 0;
+	}
+}
+.pop-work .head strong{
+	font-size: 3rem;
+	position: absolute;
+	bottom: 15%;left: 50%;
+	transform: translateX(-50%);
+} 
