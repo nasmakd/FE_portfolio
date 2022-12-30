@@ -62,7 +62,7 @@ header {
 	justify-content: center;
 }
 .logo img {
-	width: 180px;
+	width: 162px;
 }
 .logo::before {
 	content: '';
@@ -75,9 +75,9 @@ header {
 header .headerBtn {
 	/* display: none; */
 	position: absolute;
-	right: -36px;
+	right: -33px;
 	top: 0;
-	width: 36px;
+	width: 33px;
 	height: 60px;
 	background-color: #333;
 	box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
@@ -92,15 +92,15 @@ header .headerBtn button {
 	cursor: pointer;
 }
 header .headerBtn img {
-	width: 30px;
+	width: 26px;
 }
 header ul {
 	display: flex;
 	align-items: center;
 }
 header ul li {
-	font-size: 20px;
-	margin: 0 20px;
+	font-size: 18px;
+	padding: 0 20px;
 	line-height: 60px;
 	color: #111;
 	cursor: pointer;
